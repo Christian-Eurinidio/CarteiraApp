@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinnerOrigem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:prompt="@string/moeda_origem" />
+
+    <!-- TextView para exibir o saldo da moeda de origem -->
+    <TextView
+        android:id="@+id/tvSaldoOrigem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo: 0,00"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDestino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:prompt="@string/moeda_destino" />
+
+    <EditText
+        android:id="@+id/etValorConverter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o valor a converter"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnConverter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Converter" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:gravity="center" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">carteira</string>
+    <string name="moeda_origem">Moeda de Origem</string>
+    <string name="moeda_destino">Moeda de Destino</string>
+</resources>
